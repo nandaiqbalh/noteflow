@@ -5,6 +5,7 @@ import Hero from "./components/section/Hero.jsx";
 import Reviews from "./components/section/Reviews.jsx";
 import Main from "./components/section/Main.jsx";
 import Logos from "./components/section/Logos.jsx";
+import Features from "./components/section/Features.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </Header>
       <Main>
         <Logos/>
+        <Features/>
       </Main>
     </Page>
   );

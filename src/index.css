@@ -29,3 +29,19 @@
   --color-primary-glow: rgba(68, 229, 231, 0.2);
   --color-primary-50-glow: rgba(236, 252, 253, 0.2);
 }
+
+.bg-gradient-to-bottom {
+  @apply bg-[url('../src/assets/Noise.webp'),linear-gradient(to_bottom,_var(--color-primary-1500),_var(--color-primary-1300))]
+}
+
+.transition-properties {
+  @apply transition-all duration-200;
+}
+
+.primary-glow {
+  @apply drop-shadow-[0px_0px_25px_var(--color-primary-glow)];
+}
+
+.primary-glow-hover {
+  @apply drop-shadow-[0px_0px_25px_var(--color-primary-50-glow)];
+}

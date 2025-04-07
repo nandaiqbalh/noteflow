@@ -34,6 +34,11 @@
   @apply bg-[url('../src/assets/Noise.webp'),linear-gradient(to_bottom,_var(--color-primary-1500),_var(--color-primary-1300))]
 }
 
+.bg-gradient-to-top {
+  @apply bg-[url('../src/assets/Noise.webp'),linear-gradient(to_bottom,_var(--color-primary-1300),_var(--color-primary-1500))]
+}
+
+
 .transition-properties {
   @apply transition-all duration-200;
 }

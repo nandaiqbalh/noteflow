@@ -3,6 +3,8 @@ import Header from "./components/section/Header.jsx";
 import Navigation from "./components/section/Navigation.jsx";
 import Hero from "./components/section/Hero.jsx";
 import Reviews from "./components/section/Reviews.jsx";
+import Main from "./components/section/Main.jsx";
+import Logos from "./components/section/Logos.jsx";
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
         <Hero/>
         <Reviews/>
       </Header>
+      <Main>
+        <Logos/>
+      </Main>
     </Page>
   );
 }

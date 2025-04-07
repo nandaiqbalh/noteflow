@@ -13,7 +13,7 @@ const Features = () => {
 
         <div className="grid grid-cols-2 items-center mb-20 gap-x-16">
           <figure>
-            <img className="max-h-[45rem]" src={SmartOrganization} alt="Smart Organization" />
+            <img className="max-h-[45rem] z-1" src={SmartOrganization} alt="Smart Organization" />
           </figure>
 
           <div className="z-1 max-w-lg justify-self-end">
@@ -39,7 +39,7 @@ const Features = () => {
           </div>
 
           <figure>
-            <img className="max-h-[45rem]" src={ContextualReminders} alt="Contextual Reminders" />
+            <img className="max-h-[45rem] z-1" src={ContextualReminders} alt="Contextual Reminders" />
           </figure>
         </div>
       </div>

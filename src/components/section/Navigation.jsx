@@ -26,7 +26,7 @@ const Navigation = () => {
         <button className="border-primary-50 transition-properties hover:bg-primary-50 hover:text-primary-1300 box-border cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal">
           Login
         </button>
-        <button className="transition-properties bg-primary-500 border-primary-500 text-primary-1300 hover:border-primary-50 hover:bg-primary-50 primary-glow hover:primary-glow-hover cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal">
+        <button className="transition-properties bg-primary-500 border-primary-500 text-primary-1300 hover:border-primary-50 hover:bg-primary-50 primary-glow primary-glow-hover cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal">
           Get Started
         </button>
       </div>

@@ -9,6 +9,7 @@ import Features from "./components/section/Features.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import FaQs from "./components/section/FAQs/FAQs.jsx";
 import Testimonials from "./components/section/Testimonials/Testimonials.jsx";
+import Footer from "./components/section/Footer.jsx";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <FaQs/>
         <Testimonials/>
       </Main>
+
+      <Footer />
     </Page>
   );
 }

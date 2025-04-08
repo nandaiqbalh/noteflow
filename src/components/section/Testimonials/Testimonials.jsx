@@ -32,7 +32,7 @@ const Testimonials = () => {
           </p>
         </div>
       </div>
-      <div className={`mb-20 grid grid-cols-3 gap-x-6 justify-self-center`}>
+      <div className={`mb-20 grid grid-cols-3 gap-x-6 justify-self-center px-24`}>
         <TestimonialList
           testimonials={testimonials.slice(0, expanded ? 5 : 2)}
         />
@@ -46,7 +46,7 @@ const Testimonials = () => {
 
       <button
         onClick={() => setExpanded(prevState => !prevState)}
-        className={`flex text-primary-50 border-primary-50 transition-properties hover:bg-primary-50 hover:text-primary-1300 group cursor-pointer justify-self-center gap-x-3 rounded-full border-2 px-8 py-3.5 text-lg/8`}
+        className={`flex items-center text-primary-50 border-primary-50 transition-properties hover:bg-primary-50 hover:text-primary-1300 group cursor-pointer justify-self-center gap-x-3 rounded-full border-2 px-8 py-3.5 text-lg/8`}
       >
         {expanded ? "Show less" : "Show more"}
 

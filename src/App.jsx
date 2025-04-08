@@ -10,25 +10,34 @@ import { Analytics } from "@vercel/analytics/react";
 import FaQs from "./components/section/FAQs/FAQs.jsx";
 import Testimonials from "./components/section/Testimonials/Testimonials.jsx";
 import Footer from "./components/section/Footer.jsx";
+import Modal from "./components/section/Modal/Modal.jsx";
+import SignUpModal from "./components/section/Modal/SignUpModal.jsx";
+import { ModalContextProvider } from "./contexts/ModalContext.jsx";
 
 function App() {
   return (
-    <Page>
-      <Analytics/>
-      <Header>
-        <Navigation />
-        <Hero/>
-        <Reviews/>
-      </Header>
-      <Main>
-        <Logos/>
-        <Features/>
-        <FaQs/>
-        <Testimonials/>
-      </Main>
+    <ModalContextProvider>
+      <Page>
+        <Analytics />
+        <Header>
+          <Navigation />
+          <Hero />
+          <Reviews />
+        </Header>
+        <Main>
+          <Logos />
+          <Features />
+          <FaQs />
+          <Testimonials />
+        </Main>
 
-      <Footer />
-    </Page>
+        <Footer />
+
+        <Modal modal="sign-up">
+          <SignUpModal />
+        </Modal>
+      </Page>
+    </ModalContextProvider>
   );
 }
 

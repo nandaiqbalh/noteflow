@@ -8,6 +8,7 @@ import Logos from "./components/section/Logos.jsx";
 import Features from "./components/section/Features.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import FaQs from "./components/section/FAQs/FAQs.jsx";
+import Testimonials from "./components/section/Testimonials/Testimonials.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Logos/>
         <Features/>
         <FaQs/>
+        <Testimonials/>
       </Main>
     </Page>
   );

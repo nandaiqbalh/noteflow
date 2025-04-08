@@ -9,7 +9,7 @@ const Testimonials = () => {
   return (
     <section className={`bg-gradient-to-top`}>
       <div
-        className={`m-auto flex max-w-[90rem] flex-col items-center px-24 py-32`}
+        className={`m-auto flex max-w-[90rem] flex-col items-center px-24 py-32 max-xl:px-16 max-xl:py-24`}
       >
         <div className={`max-w-52rem mb-20 flex flex-col items-center gap-y-6`}>
           <p
@@ -19,7 +19,7 @@ const Testimonials = () => {
           </p>
 
           <h2
-            className={`text-primary-50 text-center text-6xl/18 font-semibold tracking-tighter`}
+            className={`text-primary-50 text-center text-6xl/18 font-semibold tracking-tighter max-xl:text-5xl/16`}
           >
             What our AI-powered <br /> notetakers have to say
           </h2>
@@ -32,7 +32,7 @@ const Testimonials = () => {
           </p>
         </div>
       </div>
-      <div className={`mb-20 grid grid-cols-3 gap-x-6 justify-self-center px-24`}>
+      <div className={`mb-20 grid grid-cols-3 gap-x-6 justify-self-center px-24 max-xl:px-16 max-xl:gap-x-4`}>
         <TestimonialList
           testimonials={testimonials.slice(0, expanded ? 5 : 2)}
         />
@@ -46,7 +46,7 @@ const Testimonials = () => {
 
       <button
         onClick={() => setExpanded(prevState => !prevState)}
-        className={`flex items-center text-primary-50 border-primary-50 transition-properties hover:bg-primary-50 hover:text-primary-1300 group cursor-pointer justify-self-center gap-x-3 rounded-full border-2 px-8 py-3.5 text-lg/8`}
+        className={`flex items-center text-primary-50 border-primary-50 transition-properties hover:bg-primary-50 hover:text-primary-1300 group cursor-pointer justify-self-center gap-x-3 rounded-full border-2 px-8 py-3.5 text-lg/8 max-xl:px-6 max-xl:py-3 max-xl:text-base/loose`}
       >
         {expanded ? "Show less" : "Show more"}
 

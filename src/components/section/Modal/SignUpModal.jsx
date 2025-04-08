@@ -45,7 +45,7 @@ const SignUpModal = () => {
         </p>
       </div>
       <div
-        className={`bg-primary-1500 flex flex-col justify-between gap-y-24 bg-[url(../src/assets/Noise.webp)] bg-repeat p-10`}
+        className={`bg-primary-1500 flex flex-col justify-between gap-y-16 bg-[url(../src/assets/Noise.webp)] bg-repeat p-10`}
       >
         <button
           onClick={() => setActiveModal("")}

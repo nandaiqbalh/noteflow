@@ -2,7 +2,7 @@ import Testimonial from "./Testimonial.jsx";
 
 const TestimonialList = ({testimonials}) => {
   return (
-    <ul className={`flex flex-col gap-y-6 max-xl:gap-y-4`}>
+    <ul className={`flex flex-col gap-y-6 max-xl:gap-y-4 max-lg:nth-[3]:hidden`}>
       {testimonials.map((testimonial) => (
         <Testimonial testimonial={testimonial}  key={testimonial.id}/>
       ))}

@@ -7,7 +7,7 @@ const Modal = ({ children, modal }) => {
   const activelyDisplayModal = modal === activeModal;
   return (
     <motion.div
-      className={`fixed top-0 right-0 bottom-0 left-0 z-50 flex items-center justify-center px-24 py-32 backdrop-blur-sm`}
+      className={`fixed top-0 right-0 bottom-0 left-0 z-50 flex items-center justify-center px-24 py-32 backdrop-blur-sm max-lg:px-8`}
       animate={activelyDisplayModal ? "visible" : "hidden"}
       variants={{
         hidden: {

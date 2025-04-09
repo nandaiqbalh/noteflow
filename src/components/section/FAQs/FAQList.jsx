@@ -12,7 +12,7 @@ const FAQList = ({
 
   return (
     <motion.ul
-      className={`m-auto flex max-w-[52rem] flex-col gap-y-14`}
+      className={`m-auto flex max-w-[52rem] flex-col gap-y-14 pb-8 max-xl:pb-6 max-lg:gap-y-12 max-lg:px-8`}
       initial={`hidden`}
       animate={inView ? "visible" : "hidden"}
       key={category}

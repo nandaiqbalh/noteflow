@@ -13,31 +13,37 @@ import Footer from "./components/section/Footer.jsx";
 import Modal from "./components/section/Modal/Modal.jsx";
 import SignUpModal from "./components/section/Modal/SignUpModal.jsx";
 import { ModalContextProvider } from "./contexts/ModalContext.jsx";
+import MobileMenu from "./components/section/MobileMenu/MobileMenu.jsx";
+import { MobileMenuContextProvider } from "./contexts/MobileMenuContext.jsx";
 
 function App() {
   return (
-    <ModalContextProvider>
-      <Page>
-        <Analytics />
-        <Header>
-          <Navigation />
-          <Hero />
-          <Reviews />
-        </Header>
-        <Main>
-          <Logos />
-          <Features />
-          <FaQs />
-          <Testimonials />
-        </Main>
+    <MobileMenuContextProvider>
+      <ModalContextProvider>
+        <Page>
+          <Analytics />
+          <Header>
+            <Navigation />
+            <Hero />
+            <Reviews />
+          </Header>
+          <Main>
+            <Logos />
+            <Features />
+            <FaQs />
+            <Testimonials />
+          </Main>
 
-        <Footer />
+          <Footer />
 
-        <Modal modal="sign-up">
-          <SignUpModal />
-        </Modal>
-      </Page>
-    </ModalContextProvider>
+          <Modal modal="sign-up">
+            <SignUpModal />
+          </Modal>
+
+          <MobileMenu />
+        </Page>
+      </ModalContextProvider>
+    </MobileMenuContextProvider>
   );
 }
 

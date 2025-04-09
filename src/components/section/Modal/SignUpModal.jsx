@@ -35,17 +35,17 @@ const SignUpModal = () => {
   return (
     <section className={`grid max-w-3xl grid-cols-2`}>
       <div
-        className={`bg-primary-1300 flex flex-col justify-center gap-y-4 bg-[url(../src/assets/Noise.webp)] bg-repeat p-10 text-center`}
+        className={`bg-primary-1300 flex flex-col justify-center gap-y-4 bg-[url(../src/assets/Noise.webp)] bg-repeat p-10 text-center max-md:px-6 max-md:py-6`}
       >
         <h4 className={`text-primary-50 text-xl/12 font-bold tracking-tight`}>
           Lets Get You Signed Up
         </h4>
-        <p className={`text-primary-100 text-lg/8`}>
+        <p className={`text-primary-100 text-lg/8 max-md:text-base/loose`}>
           No charges, no fees. Get note taking in minutes!
         </p>
       </div>
       <div
-        className={`bg-primary-1500 flex flex-col justify-between gap-y-16 bg-[url(../src/assets/Noise.webp)] bg-repeat p-10`}
+        className={`bg-primary-1500 flex flex-col justify-between gap-y-16 bg-[url(../src/assets/Noise.webp)] bg-repeat p-10 max-md:px-6 max-md:py-6`}
       >
         <button
           onClick={() => setActiveModal("")}
@@ -53,17 +53,17 @@ const SignUpModal = () => {
         >
           <Close
             width={2}
-            className={`stroke-primary-75 group-hover:stroke-primary-1300 transition-properties`}
+            className={`stroke-primary-75 group-hover:stroke-primary-1300 transition-properties max-md:h-4 max-md:w-4`}
           />
         </button>
 
         <div
-          className={`text-primary-50 flex flex-col gap-y-6 text-lg/8 font-semibold tracking-tight`}
+          className={`text-primary-50 flex flex-col gap-y-6 text-lg/8 font-semibold tracking-tight max-md:font-normal`}
         >
           <label>
             Email
             <input
-              className={`bg-primary-75 placeholder-primary-1500 text-primary-1300 mt-2 block w-full rounded-full px-8 py-4 font-normal placeholder:text-base placeholder:font-light placeholder:opacity-20`}
+              className={`bg-primary-75 placeholder-primary-1500 text-primary-1300 mt-2 block w-full rounded-full px-8 py-4 font-normal placeholder:text-base placeholder:font-light placeholder:opacity-20 max-md:px-6 max-md:py-3`}
               name="email"
               onChange={handleInputChange}
               type="email"
@@ -74,7 +74,7 @@ const SignUpModal = () => {
           <label>
             Password
             <input
-              className={`bg-primary-75 placeholder-primary-1500 text-primary-1300 mt-2 block w-full rounded-full px-8 py-4 font-normal placeholder:text-base placeholder:font-light placeholder:opacity-20`}
+              className={`bg-primary-75 placeholder-primary-1500 text-primary-1300 mt-2 block w-full rounded-full px-8 py-4 font-normal placeholder:text-base placeholder:font-light placeholder:opacity-20 max-md:px-6 max-md:py-3`}
               name="password"
               onChange={handleInputChange}
               type="password"
@@ -100,7 +100,7 @@ const SignUpModal = () => {
             </p>
           </div>
           <button
-            className={`bg-primary-500 transition-properties primary-glow-hover text-lg/8s w-full cursor-pointer rounded-full py-4`}
+            className={`bg-primary-500 transition-properties primary-glow-hover text-lg/8s w-full cursor-pointer rounded-full py-4 max-md:px-6 max-md:py-3 max-md:text-base/loose` }
             onClick={handleSubmit}
           >
             Get Started

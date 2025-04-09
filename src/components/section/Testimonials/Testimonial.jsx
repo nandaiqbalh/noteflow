@@ -8,9 +8,9 @@ const Testimonial = ({ testimonial }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: "100%" }}
       transition={{opacity: {duration: 1, ease: "easeInOut"}}}
-      className={`bg-primary-1300 rounded-2xl px-8 py-10 max-xl:px-6`}
+      className={`bg-primary-1300 rounded-2xl px-8 py-10 max-xl:px-6 max-md:py-8`}
     >
-      <div className={`flex gap-x-1 pb-8`}>
+      <div className={`flex gap-x-1 pb-8 max-md:pb-6`}>
         {Array.from({ length: testimonial.rating }).map((_, index) => (
           <Star
             key={index}
@@ -23,7 +23,7 @@ const Testimonial = ({ testimonial }) => {
         ))}
       </div>
 
-      <p className={`text-primary-50 pb-16 text-lg/loose font-light max-xl:text-base/loose`}>
+      <p className={`text-primary-50 pb-16 text-lg/loose font-light max-xl:text-base/loose max-md:pb-12`}>
         {testimonial.description}
       </p>
 
